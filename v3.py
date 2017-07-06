@@ -209,7 +209,5 @@ if __name__ == "__main__":
     suite = unittest.TestSuite()
     suite.addTest(sanity("vendorthree"))
 
-    #suite.addTest(sanity("setu"))
-
     runner = unittest.TextTestRunner()
     runner.run(suite)
