@@ -16,7 +16,7 @@ from selenium.common.exceptions import TimeoutException
 
 class sanity(unittest.TestCase):
       def setUp(self):
-          self.ApiUrl = "http://www.goibibo.com"
+          self.ApiUrl = "http://sanityprodpp.goibibo.com"
           # define browser Instance chrome
           self.driver = webdriver.Chrome("/opt/google/chrome/chromedriver")
           # Maximum browser window
@@ -28,7 +28,7 @@ class sanity(unittest.TestCase):
 
           driver.get(self.ApiUrl)
           time.sleep(10)
-          driver.get("http://www.goibibo.com")
+          driver.get("http://sanityprodpp.goibibo.com")
           time.sleep(2)
           element = driver.find_element_by_link_text('Sign In')
           element.click()
