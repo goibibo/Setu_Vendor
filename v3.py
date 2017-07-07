@@ -18,7 +18,7 @@ class sanity(unittest.TestCase):
       def setUp(self):
           self.ApiUrl = "http://www.goibibo.com"
           # define browser Instance chrome
-          self.driver = webdriver.Chrome("/home/rishav/Desktop/chromedriver")
+          self.driver = webdriver.Chrome("/opt/google/chrome/chromedriver")
           # Maximum browser window
           self.driver.maximize_window()
           print "cursor test: " + self._testMethodName
