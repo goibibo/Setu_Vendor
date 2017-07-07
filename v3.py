@@ -4,7 +4,7 @@ import json
 import time
 import logging
 from selenium import webdriver
-#import HTMLTestRunner
+import HTMLTestRunner
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -210,5 +210,5 @@ if __name__ == "__main__":
    #suite.addTest(sanity("vendorthree"))
     
 
-   #runner = HTMLTestRunner.HTMLTestRunner()
-   #runner.run(suite)
+   runner = HTMLTestRunner.HTMLTestRunner()
+   runner.run(suite)
