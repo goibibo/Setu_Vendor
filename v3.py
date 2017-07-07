@@ -3,8 +3,8 @@ import urllib2
 import json
 import time
 import logging
-import HTMLTestRunner
 from selenium import webdriver
+import HTMLTestRunner
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -203,7 +203,7 @@ class sanity(unittest.TestCase):
 
       def tearDown(self):
           self.driver.close()
-
+      
 if __name__ == "__main__":
    suite = unittest.TestSuite()
    suite.addTest(sanity("vendorthree"))
