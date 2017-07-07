@@ -210,4 +210,4 @@ if __name__ == "__main__":
     
 
    runner = HTMLTestRunner.HTMLTestRunner()
-    runner.run(suite)
+   runner.run(suite)
