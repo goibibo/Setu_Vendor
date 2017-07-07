@@ -204,10 +204,10 @@ class sanity(unittest.TestCase):
       def tearDown(self):
           self.driver.close()
 
- if __name__ == "__main__":
-    suite = unittest.TestSuite()
-    suite.addTest(sanity("vendorthree"))
+if __name__ == "__main__":
+   suite = unittest.TestSuite()
+   suite.addTest(sanity("vendorthree"))
     
 
-    runner = HTMLTestRunner.HTMLTestRunner()
+   runner = HTMLTestRunner.HTMLTestRunner()
     runner.run(suite)
