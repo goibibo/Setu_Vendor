@@ -201,10 +201,8 @@ class sanity(unittest.TestCase):
         print " Session Expire "
 
 
-      def tearDown(self):
-          self.driver.close()
-
-
+    def tearDown(self):
+         self.driver.close()
 
 if __name__ == "__main__":
     suite = unittest.TestSuite()
