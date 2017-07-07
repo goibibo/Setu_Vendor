@@ -3,7 +3,7 @@ import urllib2
 import json
 import time
 import logging
-#import HTMLTestRunner
+import HTMLTestRunner
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
@@ -205,4 +205,9 @@ class sanity(unittest.TestCase):
         self.driver.close()
 
 if __name__ == "__main__":
-    unittest.main()
+    suite = unittest.TestSuite()
+    suite.addTest(sanity("vendorthree"))
+    
+
+    runner = HTMLTestRunner.HTMLTestRunner()
+    runner.run(suite)
