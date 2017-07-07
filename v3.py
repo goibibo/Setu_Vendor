@@ -3,7 +3,7 @@ import urllib2
 import json
 import time
 import logging
-import HTMLTestRunner
+#import HTMLTestRunner
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
