@@ -210,5 +210,5 @@ if __name__ == "__main__":
    #suite.addTest(sanity("vendorthree"))
     
 
-   runner = HTMLTestRunner.HTMLTestRunner()
-   runner.run(suite)
+     runner = HTMLTestRunner.HTMLTestRunner()
+     runner.run(suite)
